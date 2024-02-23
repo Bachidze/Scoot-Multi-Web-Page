@@ -1,0 +1,8 @@
+.section-transition {
+    position: relative;
+    transition: transform 1s ease; 
+}
+
+.section-hidden {
+    transform: translateX(-300px); 
+}
