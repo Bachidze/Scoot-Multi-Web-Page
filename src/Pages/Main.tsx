@@ -5,7 +5,7 @@ const Main = () => {
     <main>
         <section className="flex justify-center items-center">
             <div className="absolute top-[70px] -z-10"> 
-                <img loading="lazy" src="/assets/MotoMobile.svg" alt="" />
+                <img loading="lazy" src="/assets/MotoMobile.svg" alt="MotoImg" />
             </div>
             <div className="text-center absolute top-[145px] -z-10">
                 <h1 className="text-[40px] font-bold text-white w-[300px] mb-6">Scooter sharing made simple</h1>
@@ -24,7 +24,7 @@ const Main = () => {
                         </nav>
                     </div>
                 </div>
-                <div className="absolute bottom-[90px] left-[-40px]">
+                <div className="absolute top-[85%] left-[-40px]">
                     <img loading="lazy" src="/assets/ArrowYellow.svg" alt="leftArrow" />
                 </div>
                 <div className=" hidden md:flex absolute bottom-[90px] right-[-36px]">

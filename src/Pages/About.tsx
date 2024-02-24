@@ -1,5 +1,29 @@
+import { useState } from "react"
+import Toggle from "../components/Toggle"
+import Toggle2 from "../components/Toggle2"
+import { data, data2 } from "../togglee"
+
 const About = () => {
+  const [itemNum,setItemNum] = useState<number|null>(null)
+  const [itemNum2,setItemNum2] = useState<number|null>(null)
+
+  const appear = (active:number) => {
+    if(itemNum === active){
+      setItemNum(null)
+    }else(
+      setItemNum(active)
+    )
+  }
+  const appear2 = (active2:number) => {
+    if(itemNum2 === active2){
+      setItemNum2(null)
+    }else(
+      setItemNum2(active2)
+    )
+  }
+
   return (
+
     <>
      <section className="flex justify-center items-center">
             <div className="absolute top-[70px] -z-10"> 
@@ -19,10 +43,12 @@ const About = () => {
                 <img loading="lazy" className="absolute top-[180px] left-[32px]" src="/assets/ZigZag.svg" alt="ZigZag" />
             </div>
             <div>
-                <h1 className="text-center mt-[56px] mb-[32px] text-[32px] w-[350px] text-[#495567] leading-[32px]">
+
+                <h1 className="text-center mt-[56px] mb-[32px] text-[32px] w-[350px] text-[#495567] font-bold leading-[32px]">
                 Mobility for the digital era
                 </h1>
-                <p className="text-center change w-[350px] text-[15px] text-[#939CAA] leading-[25px]"> 
+
+               <p className="text-center change w-[350px] text-[15px] text-[#939CAA] leading-[25px]"> 
                 Getting around should be simple (and even fun!) for everyone. We embrace technology to provide low cost,
                  smart access to scooters at your fingertips.
                 </p>
@@ -30,12 +56,12 @@ const About = () => {
 
 
 
-            <div className="relative">
+            <div className="relative top-[50px] mb-[40px]">
                 <img loading="lazy" src="/assets/Train.svg" alt="Train" />
                 <img loading="lazy" className="absolute top-[0px] right-[80px]" src="/assets/2ZigZag.svg" alt="2ZigZag" />
             </div>
             <div>
-                <h1 className="text-center mt-[56px] mb-[32px] text-[32px]  w-[350px] leading-[32px] text-[#495567]">
+                <h1 className="text-center mt-[56px] mb-[32px] text-[32px]  w-[350px] font-bold leading-[32px] text-[#495567]">
                 Better urban living
                 </h1>
                 <p className="text-center change w-[350px] text-[15px] text-[#939CAA] leading-[25px]"> 
@@ -99,6 +125,48 @@ const About = () => {
                living wage based on their location and are Scoot employees.
               </p>
             </div>
+          </div>
+        </section>
+
+        <section className="relative bottom-[200px] ml-[32px] mr-[32px] flex flex-col justify-center items-center">
+
+
+          <h1 className="text-[#495567] text-[32px] leading-[32px] mb-[48px] font-bold">FAQs</h1>
+
+          <div className="items-center justify-center flex flex-col gap-6">
+          <h1 className="text-[#495567] text-[24px] leading-[28px] font-bold mb-[32px]">How it works?</h1>
+          {data.map(el =>(
+            <Toggle
+            appear={appear}
+            img={el.img}
+            toggleNum={el.toggleNum}
+            paragraph={el.paragraph}
+            itemNum={itemNum}
+            title={el.title}
+            />
+          ))}
+          </div>
+        </section>
+
+
+
+        <section className="relative bottom-[200px] ml-[32px] mr-[32px] flex flex-col justify-center items-center mt-[64px]">
+
+
+
+          <div className="items-center justify-center flex flex-col gap-6">
+                <h1 className="text-[#495567] text-[24px] leading-[28px] font-bold mb-[32px]">Safe driving</h1>
+
+                {data2.map(el2 => (
+                  <Toggle2
+                  appear2={appear2}
+                  img={el2.img2}
+                  itemNum2={itemNum2}
+                  paragraph={el2.paragraph2}
+                  title={el2.title2}
+                  toggleNum2={el2.toggleNum2}
+                  />
+                ))}
           </div>
         </section>
     </>

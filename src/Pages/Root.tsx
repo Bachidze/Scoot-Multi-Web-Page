@@ -52,7 +52,7 @@ const Root = () => {
             </div>
             <div className="absolute top-[88px]">
                 <div className="mb-[40px]">
-                    <h1 className="text-[32px] text-white leadin-[32px] w-[350px] text-center">Sign up and Scoot off today</h1>
+                    <h1 className="text-[32px] text-white leadin-[32px] w-[350px] font-bold text-center">Sign up and Scoot off today</h1>
                 </div>
                 <div className="flex items-center justify-center gap-4">
                     <img src="/assets/Apple.svg" alt="Apple" />
