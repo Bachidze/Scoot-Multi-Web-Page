@@ -108,7 +108,7 @@ const Careers = () => {
             </section>
     </section>
 
-    <section className=" relative bottom-[350px] flex flex-col gap- md:bottom-[150px]"> 
+    <section className=" relative bottom-[350px] flex flex-col gap- md:bottom-[150px] md:items-center"> 
       <div className="bg-[#F2F5F9] ml-[32px] mr-[32px] pl-[32px] pr-[32px] flex justify-center gap-9 flex-col items-center pt-[36px] pb-[32px] md:flex-row md:justify-between w-[689px]">
           <div className="text-center md:text-left">
             <h1 className="text-[#495567] text-[18px] font-bold leading-[24px] md:text-[24px] md:leading-[28px]">General Manager</h1>
