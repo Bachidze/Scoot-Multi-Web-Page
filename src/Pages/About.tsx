@@ -25,12 +25,13 @@ const About = () => {
   return (
 
     <>
-     <section className="flex justify-center items-center">
+     <section className="flex justify-center items-center md:justify-start">
             <div className="absolute top-[70px] -z-10"> 
-                <img loading="lazy" src="/assets/About.svg" alt="AboutFirstPhoto" />
+                <img loading="lazy" className="md:hidden" src="/assets/About.svg" alt="AboutFirstPhoto" />
+                <img loading="lazy" className="hidden md:flex" src="/assets/2Tablet2First.svg" alt="" />
             </div>
-            <div className="absolute text-white text-[40px] top-[130px] font-bold leading-[40px] -z-10">
-              <h1>About</h1>
+            <div className="absolute text-white text-[40px] top-[130px] font-bold leading-[40px] -z-10 md:pl-[100px] md:pt-[10px]">
+              <h1 className="md:text-[56px] md:leading-[56px]">About</h1>
             </div>
           
         </section>
@@ -38,17 +39,19 @@ const About = () => {
         <section className="flex justify-center  items-center flex-col mt-[83px] relative bottom-[450px] -z-10">
 
 
-            <div className="relative">
-                <img loading="lazy" src="/assets/MobileGirl.svg" alt="MobileGirl" />
-                <img loading="lazy" className="absolute top-[180px] left-[32px]" src="/assets/ZigZag.svg" alt="ZigZag" />
+            <div className="relative md:flex md:flex-col md:items-center md:justify-center md:top-[50px]">
+                <img loading="lazy" className="md:w-[400px]" src="/assets/MobileGirl.svg" alt="MobileGirl" />
+                <img loading="lazy" className="absolute top-[180px] left-[32px] md:hidden" src="/assets/ZigZag.svg" alt="ZigZag" />
+                <img loading="lazy" className="hidden md:flex md:relative md:left-[20px] bottom-[170px]" src="/assets/TTTabletZZigZZag.svg" alt="ZigZag" />
+                <img loading="lazy" className="hidden md:flex md:relative md:right-[330px] bottom-[320px]" src="/assets/Path 3 (1).svg" alt="ZigZag" />
             </div>
-            <div>
+            <div className="md:relative md:bottom-[100px]">
 
-                <h1 className="text-center mt-[56px] mb-[32px] text-[32px] w-[350px] text-[#495567] font-bold leading-[32px]">
+                <h1 className="text-center mt-[56px] mb-[32px] text-[32px] w-[350px] text-[#495567] font-bold leading-[32px]  md:text-[48px] md:leading-[48px] md:w-[573px]">
                 Mobility for the digital era
                 </h1>
 
-               <p className="text-center change w-[350px] text-[15px] text-[#939CAA] leading-[25px]"> 
+               <p className="text-center change w-[350px] text-[15px] text-[#939CAA] leading-[25px] md:w-[573px]"> 
                 Getting around should be simple (and even fun!) for everyone. We embrace technology to provide low cost,
                  smart access to scooters at your fingertips.
                 </p>
@@ -56,15 +59,16 @@ const About = () => {
 
 
 
-            <div className="relative top-[50px] mb-[40px]">
-                <img loading="lazy" src="/assets/Train.svg" alt="Train" />
-                <img loading="lazy" className="absolute top-[0px] right-[80px]" src="/assets/2ZigZag.svg" alt="2ZigZag" />
+            <div className="relative top-[50px] mb-[40px] md:top-0">
+                <img loading="lazy" className="md:w-[400px]" src="/assets/Train.svg" alt="Train" />
+                <img loading="lazy" className="absolute top-[0px] right-[80px] md:hidden" src="/assets/2ZigZag.svg" alt="2ZigZag" />
+                <img loading="lazy" className="hidden md:flex absolute top-[0px] right-[229px]" src="/assets/TabletcityZigZAG.svg" alt="2ZigZag" />
             </div>
             <div>
-                <h1 className="text-center mt-[56px] mb-[32px] text-[32px]  w-[350px] font-bold leading-[32px] text-[#495567]">
+                <h1 className="text-center mt-[56px] mb-[32px] text-[32px]  w-[350px] font-bold leading-[32px] text-[#495567] md:text-[48px] md:leading-[48px] md:w-[573px]">
                 Better urban living
                 </h1>
-                <p className="text-center change w-[350px] text-[15px] text-[#939CAA] leading-[25px]"> 
+                <p className="text-center change w-[350px] text-[15px] text-[#939CAA] leading-[25px] md:w-[573px]"> 
                 We’re helping connect cities and bring people closer together.
                  Our scooters are also fully-electric and we offset the minimal
                   carbon footprint for each ride.
@@ -73,7 +77,7 @@ const About = () => {
         </section>
         <section className="flex justify-center flex-col items-center  relative bottom-[350px]">
           <div>
-            <h1 className="text-[32px] mb-[50px] leading-[32px] text-[#495567]">
+            <h1 className="text-[32px] mb-[50px] leading-[32px] text-[#495567] md:text-[48px] md:leading-[48px] ">
             Our values
             </h1>
           </div>
@@ -131,10 +135,10 @@ const About = () => {
         <section className="relative bottom-[200px] ml-[32px] mr-[32px] flex flex-col justify-center items-center">
 
 
-          <h1 className="text-[#495567] text-[32px] leading-[32px] mb-[48px] font-bold">FAQs</h1>
+          <h1 className="text-[#495567] text-[32px] leading-[32px] mb-[48px] font-bold md:text-[48px] md:leading-[48px] ">FAQs</h1>
 
           <div className="items-center justify-center flex flex-col gap-6">
-          <h1 className="text-[#495567] text-[24px] leading-[28px] font-bold mb-[32px]">How it works?</h1>
+          <h1 className="text-[#495567] text-[24px] leading-[28px] font-bold mb-[32px] md:text-[40px] md:leading-[48px]">How it works?</h1>
           {data.map(el =>(
             <Toggle
             appear={appear}
