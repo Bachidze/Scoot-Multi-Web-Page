@@ -25,12 +25,12 @@ const About = () => {
   return (
 
     <>
-     <section className="flex justify-center items-center md:justify-start">
+     <section className="flex justify-center items-center">
             <div className="absolute top-[70px] -z-10"> 
                 <img loading="lazy" className="md:hidden" src="/assets/About.svg" alt="AboutFirstPhoto" />
                 <img loading="lazy" className="hidden md:flex" src="/assets/2Tablet2First.svg" alt="" />
             </div>
-            <div className="absolute text-white text-[40px] top-[130px] font-bold leading-[40px] -z-10 md:pl-[100px] md:pt-[10px]">
+            <div className="absolute text-white text-[40px] top-[130px] font-bold leading-[40px] -z-10 md:pl-[100px] md:pt-[10px] md:left-0">
               <h1 className="md:text-[56px] md:leading-[56px]">About</h1>
             </div>
           
