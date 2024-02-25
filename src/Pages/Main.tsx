@@ -5,8 +5,8 @@ const Main = () => {
     <main>
         <section className="flex justify-center items-center">
             <div className="absolute top-[70px] -z-10"> 
-                <img className="md:hidden" loading="lazy" src="/assets/MotoMobile.svg" alt="MotoImg" />
-                <img className="hidden md:flex" loading="lazy" src="/assets/TabletMoto.svg" alt="Tablet" />
+                <img className="md:hidden"  src="/assets/MotoMobile.svg" alt="MotoImg" />
+                <img className="hidden md:flex"  src="/assets/TabletMoto.svg" alt="Tablet" />
             </div>
             <div className="text-center absolute top-[145px] -z-10">
                 <h1 className="text-[40px] font-bold text-white w-[300px] mb-6 md:text-[56px] md:w-[573px]">Scooter sharing made simple</h1>
@@ -26,8 +26,8 @@ const Main = () => {
                     </div>
                 </div>
                 <div className="absolute top-[85%] left-[-40px]  md:relative md:top-[20px] md:left-[-97px]">
-                    <img className="md:hidden"  loading="lazy" src="/assets/ArrowYellow.svg" alt="leftArrow" />
-                    <img className="hidden md:flex" loading="lazy" src="/assets/TabletZigZag.svg" alt="tablet" />
+                    <img className="md:hidden"   src="/assets/ArrowYellow.svg" alt="leftArrow" />
+                    <img className="hidden md:flex"  src="/assets/TabletZigZag.svg" alt="tablet" />
                 </div>
             </div>
         </section>
@@ -110,14 +110,15 @@ const Main = () => {
 
 
             <div className="relative">
-                <img loading="lazy" src="/assets/Oval2.svg" alt="City" />
-                <img loading="lazy" className="absolute top-[0px] right-[80px]" src="/assets/2ZigZag.svg" alt="2ZigZag" />
+                <img loading="lazy" className="md:w-[400px]" src="/assets/Oval2.svg" alt="City" />
+                <img loading="lazy" className="absolute top-[0px] right-[80px] md:hidden" src="/assets/2ZigZag.svg" alt="2ZigZag" />
+                <img loading="lazy" className="hidden md:flex md:absolute md:right-[230px] md:top-2" src="/assets/TabletcityZigZAG.svg" alt="" />
             </div>
             <div>
-                <h1 className="text-center mt-[56px] mb-[32px] text-[32px]  w-[350px] leading-[32px] text-[#495567]">
+                <h1 className="text-center mt-[56px] mb-[32px] text-[32px]  w-[350px] leading-[32px] text-[#495567] font-bold md:text-[48px] md:leading-[48px] md:w-[573px]">
                 Coming to a city near you
                 </h1>
-                <p className="text-center change w-[350px] text-[15px] text-[#939CAA] leading-[25px]"> 
+                <p className="text-center change w-[350px] text-[15px] text-[#939CAA] leading-[25px] md:w-[573px]"> 
                 Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure to let
                  us know if you want to see us in your hometown. We’re aiming to let our scooters 
                  loose on 23 cities over the coming year.
@@ -136,14 +137,15 @@ const Main = () => {
 
 
             <div className="relative">
-                <img loading="lazy" src="/assets/Safuleimg.svg" alt="Wallet" />
-                <img loading="lazy" className="absolute top-0 left-[124px]" src="/assets/3ZigZag.svg" alt="ZigZag" />
+                <img loading="lazy" className="md:w-[400px]" src="/assets/Safuleimg.svg" alt="Wallet" />
+                <img loading="lazy" className="absolute top-0 left-[124px] md:hidden" src="/assets/3ZigZag.svg" alt="ZigZag" />
+                <img loading="lazy" className="hidden md:flex md:absolute md:top-[50px] md:left-[229px]" src="/assets/TabletWalletZigZag.svg" alt="" />
             </div>
             <div>
-                <h1 className="text-center mt-[56px] mb-[32px] text-[32px] w-[350px] leading-[32px] text-[#495567]">
+                <h1 className="text-center mt-[56px] mb-[32px] text-[32px] w-[350px] leading-[32px] text-[#495567] font-bold md:text-[48px] md:leading-[48px] md:w-[573px]">
                 Zero hassle payments
                 </h1>
-                <p className="text-center change w-[350px] text-[15px] text-[#939CAA] leading-[25px]"> 
+                <p className="text-center change w-[350px] text-[15px] text-[#939CAA] leading-[25px] md:w-[573px]"> 
                 Our payment is as easy as one two three. We accept most credit cards and debit cards.
                  You can also link your PayPal account inside the app. Need to pay later? No worries!
                   You can defer payment for up to a month.
