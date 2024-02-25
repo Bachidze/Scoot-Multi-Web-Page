@@ -88,7 +88,7 @@ const About = () => {
             </div>
             <div className="flex flex-col justify-center items-center">
               <h1 className="mb-[27px] text-[#495567] text-[24px] font-bold">Our tech</h1>
-              <p className="w-[300px] text-center text-[15px] text-[#939CAA] change">
+              <p className="w-[300px] text-center text-[15px] text-[#939CAA] change md:w-[457px]">
                 We’re using cutting edge technology to drive accessible urban transportation
                 forward. Our fully electric scooters are a joy to ride!
               </p>
@@ -105,7 +105,7 @@ const About = () => {
             </div>
             <div className="flex flex-col justify-center items-center">
               <h1 className="mb-[27px] text-[#495567] text-[24px] font-bold">Our integrity</h1>
-              <p className="w-[300px] text-center text-[15px] text-[#939CAA] change">
+              <p className="w-[300px] text-center text-[15px] text-[#939CAA] change md:w-[457px]">
               We are fully committed to deliver a great
                yet safe, sustainable micro-mobility 
               experience in every city we serve.
@@ -124,7 +124,7 @@ const About = () => {
             </div>
             <div className="flex flex-col justify-center items-center">
               <h1 className="mb-[27px] text-[#495567] text-[24px] font-bold">Our community</h1>
-              <p className="w-[300px] text-center text-[15px] text-[#939CAA] change">
+              <p className="w-[300px] text-center text-[15px] text-[#939CAA] change md:w-[457px]">
               We support every community we serve. All workers are paid a
                living wage based on their location and are Scoot employees.
               </p>
