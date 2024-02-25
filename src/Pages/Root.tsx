@@ -12,13 +12,27 @@ const Root = () => {
   return (
     <>
     <header > 
-        <section className="flex justify-center  items-center relative bg-white pt-[22px] pb-[22px]">
-            <div onClick={appear} className="ml-[33px] absolute left-0 bottom-[28px] cursor-pointer">
+        <section className="flex   items-center justify-center relative bg-white pt-[22px] pb-[22px] md:justify-between md:items-center md:pl-[39px] pr-[39px]">
+            <div onClick={appear} className="ml-[33px] absolute left-0 bottom-[28px] cursor-pointer  md:hidden">
                 <img onClick={appear} src={show ? X:Menu} alt="" />
             </div>
-            <div className="flex">
+            <div className="flex md:pr-[58px] md:items-center">
                 <h1 className="text-[#333A44] text-[20px] font-bold">Scoot</h1>
             </div>
+            <div className="hidden md:flex gap-8 relative top-[2px]">
+                    <h1 className="text-[#939CAA]  text-[15px] font-bold"><Link to={'about'}>About</Link></h1>
+                    <h1 className="text-[#939CAA]  text-[15px] font-bold"><Link to={'location'}>Location</Link></h1>
+                    <h1 className="text-[#939CAA]  text-[15px] font-bold"><Link to={'careers'}>Careers</Link></h1>
+            </div>
+            <div className="hidden md:flex justify-end">
+                    <div className=" flex justify-center items-center  bg-[#FCB72B] w-[192px] h-[53px]">
+                        <nav>
+                            <ul>
+                            <li className="text-[#E5ECF4] text-[18px] font-bold"><Link to={'/'}>Get Scootin</Link></li>  
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
         </section>
         <section  className={`pl-[33px] bg-[#333A44] w-[256px] h-[603px] flex flex-col justify-around  section-transition ${show ? '' : 'section-hidden'}`}>
             <nav>

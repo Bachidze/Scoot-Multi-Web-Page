@@ -10,12 +10,12 @@ const Locations = () => {
               <h1>Locations</h1>
             </div>
         </section>
-        <section className="flex flex-col justify-center items-center relative bottom-[350px]">
+        <section className="flex flex-col justify-center items-center relative bottom-[350px] -z-10">
           <div>
             <img src="/assets/Map.svg" alt="map" />
           </div>
         </section>
-        <section className="flex flex-col justify-center items-center relative bottom-[250px] gap-4">
+        <section className="flex flex-col justify-center items-center relative bottom-[250px] gap-4 -z-10">
           <div className="bg-[#FCB72B26] w-[311px] h-[72px] flex flex-col justify-center items-center">
             <h1 className="text-[24px] leading-[28px] text-[#495567] font-bold">New York</h1>
           </div>
